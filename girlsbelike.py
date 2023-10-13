@@ -67,7 +67,7 @@ def prepare_post() -> str:
     dracula_lines = [line.replace("\n", " ") for line in dracula_txt.split("\n\n") if line.strip() and not SEPARATOR in line.strip()]
     random_line = dracula_lines[secrets.randbelow(len(dracula_lines))]
 
-    # Let's make this a bit less racist...
+    # Let's make this not so racist...
     random_line.replace("gypsy", "Roma")
     random_line.replace("gipsy", "Roma")
     random_line.replace("Gypsy", "Roma")
