@@ -16,8 +16,8 @@ SEPARATOR = "*       *       *       *       *"
 GIRLS_BE_LIKE = "Girls be like:\n\n"
 
 HOST = os.environ.get("ATP_PDS_HOST", "https://bsky.social")
-HANDLE = os.environ.get("BSKY_HANDLE", "")
-PASSWORD = os.environ.get("BSKY_PASSWORD", "")
+HANDLE = os.environ.get("BSKY_HANDLE")
+PASSWORD = os.environ.get("BSKY_PASSWORD")
 
 
 if not HANDLE or not PASSWORD:
